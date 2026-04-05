@@ -1,0 +1,161 @@
+body {
+  background-color: #f4f4f4;
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+.site-header {
+  background-color: #2f7d57;
+}
+
+.logo {
+  width: 130px;
+  height: auto;
+  display: block;
+  background-color: #ffffff;
+  padding: 8px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.logo-link {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.logo-link:hover .logo {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.subtitle {
+  color: #e7f4ec;
+}
+
+.content-box {
+  background-color: #ffffff;
+  border: 1px solid #d6d6d6;
+  padding: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+th {
+  cursor: pointer;
+}
+
+footer a {
+  color: #222;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.local-nav {
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+.local-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.local-nav-list li + li {
+  margin-top: 10px;
+}
+
+.local-nav-list a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: #222;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.local-nav-list a:hover {
+  background-color: #f1f5f3;
+  text-decoration: none;
+}
+
+.table-responsive {
+  border-radius: 10px;
+}
+
+.table td,
+.table th {
+  white-space: nowrap;
+}
+
+code {
+  background-color: #f1f1f1;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.95em;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+  .local-nav {
+    position: static;
+  }
+
+  .logo {
+    width: 110px;
+  }
+
+  .content-box {
+    padding: 18px;
+  }
+}
+
+/* Smartphone */
+@media (max-width: 767.98px) {
+  .site-header {
+    text-align: center;
+  }
+
+  .logo {
+    width: 95px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .content-box {
+    padding: 16px;
+  }
+
+  .local-nav-list a {
+    padding: 12px;
+  }
+
+  .table td,
+  .table th {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
